@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+  PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+  "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+  <generatorConfiguration>
+  	<classPathEntry location="E:\apache-maven-3.6.3\repository\mysql\mysql-connector-java\5.1.28\mysql-connector-java-5.1.28.jar"/>
+  	<context id="SSMtables" targetRuntime="MyBatis3">
+  		<jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://127.0.0.1:3306/hanxi"
+  		userId="root" password="123456"
+  		></jdbcConnection>
+  		
+  		<!--指定生成的类型世java类型，避免数据库中number等类型字段 -->
+  		<javaTypeResolver>
+  			<property name="forceBigDecimals" value="false"/>
+  		</javaTypeResolver>
+  		
+  		<!-- 自动生成的实体存放包路径 -->
+  		<javaModelGenerator targetPackage="org.zhku.HanxiMall.pojo" targetProject="./src/main/java">
+  			<property name="enableSubPackage" value="true"/>
+  			<property name="trimStrings" value="true"/>
+  		</javaModelGenerator>
+  		<!-- 自动生成的mapper.xml文件路径 -->
+  		<sqlMapGenerator targetPackage="org.zhku.HanxiMall.mapper" targetProject="./src/main/java" >
+  			<property name="enableSubPackage" value="true"/>
+  		</sqlMapGenerator>
+  		<!-- 自动生成的mapper.java路径 -->
+  		<javaClientGenerator type="XMLMAPPER" targetPackage="org.zhku.HanxiMall.mapper" targetProject="./src/main/java">
+  			<property name="enableSubPackage" value="true"/>
+  		</javaClientGenerator>
+  		<table tableName="admin" domainObjectName="admin"></table>
+  		<table tableName="dealer" domainObjectName="dealer"></table>
+  		<table tableName="dealer_stock" domainObjectName="dealer_stock"></table>
+  		<table tableName="orders" domainObjectName="orders"></table>
+  		<table tableName="product" domainObjectName="product"></table>
+  	</context>
+  </generatorConfiguration>

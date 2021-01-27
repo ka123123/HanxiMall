@@ -1,0 +1,28 @@
+package org.zhku.HanxiMall.Contorller;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+
+/**
+ * @title MyController
+ * @description helloworld
+ * @author jerry
+ * @date 2020年7月31日下午8:39:02
+ */
+@RestController
+public class MyController {	
+	/**
+	 * 
+	 * @title: Helloworld
+	 * @description:
+	 * @author: jerry
+	 * @date 2020年7月31日 下午8:39:43
+	 * @return String
+	 * @version
+	 */
+	@RequestMapping("/")
+	public String Hello() {
+		return "hello jerry";
+	}
+}

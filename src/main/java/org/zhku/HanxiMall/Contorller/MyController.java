@@ -1,0 +1,90 @@
+package org.zhku.HanxiMall.Contorller;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+
+/**
+ * @title MyController
+ * @description helloworld
+ * @author jerry
+ * @date 2020年7月31日下午8:39:02
+ */
+@RestController
+public class MyController {	
+	/**
+	 * 
+	 * @title: Helloworld
+	 * @description:
+	 * @author: jerry
+	 * @date 2020年7月31日 下午8:39:43
+	 * @return String
+	 * @version
+	 */
+	@RequestMapping("/")
+	public String Hello() {
+<<<<<<< .mine
+		return "hello jerry";
+||||||| .r9
+		return "hello1";
+		System.out.println("1111111111");
+=======
+		
+		System.out.println("1111111111");
+		return "hello1";
+>>>>>>> .r14
+	}
+<<<<<<< .mine
+||||||| .r9
+	
+
+	/**
+	 * 	
+	* @Title: wwlHello
+	* @Description:
+	* @author: wwl
+	* @date 2020年7月31日 下午8:50:11
+	* @return String
+	* @version
+	 */
+	@RequestMapping("test")
+	public String wwlHello() {
+		System.out.println("HelloWorld");
+		return "Testing...";
+	}
+	
+
+=======
+	
+
+	/**
+	 * 	
+	* @Title: wwlHello
+	* @Description:
+	* @author: wwl
+	* @date 2020年7月31日 下午8:50:11
+	* @return String
+	* @version
+	 */
+	@RequestMapping("test")
+	public String wwlHello() {
+		System.out.println("HelloWorld");
+		return "Testing...";
+	}
+	
+	/**
+	 * 
+	* @Title: yyt
+	* @Description:
+	* @author:yyt
+	* @date 2020-7-31 21:14:57
+	* @return String
+	* @version
+	 */
+	@RequestMapping("/yyttest")
+	public String yyt() {
+		System.out.println("HelloWorld");
+		return "testing...";
+	}
+>>>>>>> .r14
+}
